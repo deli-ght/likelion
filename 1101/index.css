@@ -24,11 +24,19 @@ h4 {
   margin: 20px;
 }
 
-#sidebar {
+#contents {
+  position: relative;
+}
+
+#aboutTitle::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: calc(50% - 25px);
   display: inline-block;
   width: 50px;
-  height: 1px;
-  border: 1px solid blue;
+  height: 3px;
+  background-color: blue;
 }
 
 #aboutus {
