@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#page {
+  text-align: center;
+}
+
+#title {
+  margin: 30px;
+  font-size: 50px;
+  font-family: "CookieRun black";
+}
+
+h4 {
+  margin: 20px;
+  font-size: 20px;
+  font-family: "CookieRun";
+}
+
+#titleSub {
+  margin: 20px;
+}
+
+#sidebar {
+  display: inline-block;
+  width: 50px;
+  height: 1px;
+  border: 1px solid blue;
+}
+
+#aboutus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  width: 50%;
+  margin: auto;
+}
+
+#aboutus .companies {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+}
+
+.companyPic {
+  height: 120px;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #e9e9e9;
+}
