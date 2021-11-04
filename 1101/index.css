@@ -4,30 +4,41 @@
   box-sizing: border-box;
 }
 
+body {
+  text-align: center;
+}
+
+h4 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-family: "CookieRun";
+}
+
+/* section page */
 #page {
   text-align: center;
 }
 
 #title {
   margin: 30px;
-  font-size: 50px;
+  font-size: 60px;
   font-family: "CookieRun black";
 }
-
-h4 {
-  margin: 20px;
-  font-size: 20px;
-  font-family: "CookieRun";
+#titleText {
+  margin: 60px auto;
 }
 
 #titleSub {
-  margin: 20px;
+  margin: 60px auto;
 }
 
 #contents {
   position: relative;
 }
 
+#aboutTitle {
+  font-size: 30px;
+}
 #aboutTitle::before {
   content: "";
   position: absolute;
@@ -35,8 +46,8 @@ h4 {
   left: calc(50% - 25px);
   display: inline-block;
   width: 50px;
-  height: 3px;
-  background-color: blue;
+  height: 1.5px;
+  background-color: rgb(72, 72, 206);
 }
 
 #aboutus {
@@ -56,9 +67,96 @@ h4 {
 
 .companyPic {
   height: 120px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
+
+/* section context */
+
+#context {
+  display: inline-block;
+  width: 70%;
+  margin: 50px;
+  text-align: left;
+}
+
+.contextTitle {
+  position: relative;
+}
+
+.contextTitle::before {
+  content: " ";
+  position: absolute;
+  left: -30px;
+  height: 15px;
+  width: 5px;
+  transform: rotate(45deg);
+  border-bottom: 5px solid black;
+  border-right: 5px solid black;
+}
+
+.contextBox {
+  margin: 20px auto;
+}
+
+.contextBox span {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+/* footer */
 
 footer {
   background-color: #e9e9e9;
+  padding: 50px;
+  margin-top: 50px;
+}
+
+footer > * {
+  width: 80%;
+  margin: 0px auto;
+}
+#sitemap,
+#companyInfos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.siteLists {
+  display: flex;
+  list-style: none;
+  line-height: 40px;
+  height: 140px;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.siteLists li {
+  text-align: left;
+  margin-right: 30px;
+  font-weight: 700;
+}
+
+#snss img {
+  margin-left: 10px;
+}
+
+#companyInfos {
+  margin-top: 30px;
+}
+
+#companyInfos #companyInfo {
+  display: flex;
+  font-size: 13px;
+  width: 70%;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#companyInfos #companyInfo dt {
+  font-weight: bold;
+  margin-right: 2px;
+}
+#companyInfos #companyInfo dd:not(:last-child)::after {
+  content: "|";
+  margin: 0px 8px;
 }
