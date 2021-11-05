@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>relative</title>
+  <style>
+    .box1{
+        position: static;
+        background-color: green;
+        color: white;
+        width: 100px;
+        height: 100px;
+    }
+    
+    .box2{
+        position: relative;
+        left: 40px;
+        top: 30px;
+        background-color: red;
+        color: white;
+        width: 100px;
+        height: 100px;
+    }
+    
+    .box3{
+        position: absolute;
+        left: 100px;
+        top: 100px;
+        background-color: rgb(30, 67, 167);
+        color: white;
+        width: 100px;
+        height: 100px;
+    }
+    .box4{
+        position: absolute;
+        left: 100px;
+        top: 100px;
+        background-color: rgb(158, 167, 30);
+        color: white;
+        width: 100px;
+        height: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box1">static</div>
+  <div class="box2">relative
+    <div class="box4">absolute</div>
+  </div>
+  <div class="box3">absolute</div>
+</body>
+</html>
