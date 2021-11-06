@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 12px;
+        }
+
+        .login{
+            display: inline-block;
+            background: #f7f9fa;
+            margin: 50px;
+            border: 1px solid #dae1e6;
+            width: 350px;
+            height: 138px;
+            padding: 19px 16px 12px 17px
+        }
+
+        h6{
+            font-weight: 300;
+        }
+
+        .lgbtn{
+            width: 100%;
+            height: 48px;
+            margin: 10px auto;
+            background: #19CE60;
+            color: white;
+            border: none;
+        }
+
+        img{
+            height: 10px;
+        }
+        
+        #login-helper{
+            padding: 5px;
+        }
+
+        ul{
+            list-style: none;
+            float: left;
+        }
+
+        ul li{
+            display: inline-block;
+        }
+
+        .id::after{
+            content: "&#183;·";
+            color: grey;
+
+        }
+
+        .join{
+            float: right;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <section class="login">
+        <h6>네이버를 더 안전하고 편리하게 이용하세요</h6>
+        <button type="button" value="NAVER 로그인" class="lgbtn"><img src="images/title.png" alt=""> 로그인</button>
+        <article id="login-helper">
+            <ul>
+                <li class="id">
+                    <img src="images/lock.png" alt="id">
+                    아이디
+                </li>
+                <li class="pw">
+                    비밀번호
+                </li>
+            </ul>
+            <span class="join">
+                <img src="images/user.png" alt="join">
+                회원가입
+            </span>
+        </article>
+    </section>
+</body>
+</html>

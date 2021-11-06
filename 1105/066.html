@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="IE=edge"
+    >
+    <meta
+        name="viewport"
+        content="width=, initial-scale=1.0"
+    >
+    <title>Document</title>
+    <style>
+        /* clear-fix */
+        .clear-fix::after {
+            content: ' ';
+            /* 기본 display : inline */
+            display: block;
+            clear: both;
+        }
+
+        li {
+            float: left;
+            width: 300px;
+            height: 100px;
+            background: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="clear-fix">
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <div>dfdfdfdd
+    </div>
+</body>
+
+</html>
