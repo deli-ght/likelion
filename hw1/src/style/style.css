@@ -1,0 +1,227 @@
+/* float만 사용하는 버전 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+}
+.main {
+  display: inline-block;
+  margin: 165px auto;
+  width: 1060px;
+  height: 1170px;
+  background-color: #f2f2f2;
+  border: 1px solid #bdbdbd;
+  border-radius: 10px;
+}
+
+.main .movieListTitle {
+  margin: 0 auto;
+  width: 650px;
+  padding: 40px;
+  font-size: 24px;
+  font-weight: 700;
+  border-bottom: 2px solid #bdbdbd;
+}
+
+.main .movieSchedule {
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  line-height: 18.75px;
+  margin: 30px;
+  font-weight: 500;
+}
+
+.main .currentPlaying {
+  font-weight: 900;
+}
+
+.movieContainers {
+  display: inline-block;
+  width: 1003px;
+  background-color: #fff;
+  border: 1px solid #bdbdbd;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.movieContainers .movieContainer {
+  position: relative;
+  float: left;
+  width: 220px;
+  height: 441px;
+  border: 1px solid #bdbdbd;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 25px;
+  overflow: hidden;
+  text-align: left;
+  margin: 10px;
+  box-shadow: 0 0 10px 0 #bdbdbd, 0 0 10px 0 #bdbdbd;
+}
+
+.movieContainer h6 {
+  font-weight: 900;
+  font-family: "Noto Sans KR";
+  margin: 10px auto;
+  font-size: 15px;
+  width: 180px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.movieContainer dl {
+  position: relative;
+  margin: 10px auto;
+}
+
+.movieContainer .movieDetails > * {
+  display: inline-block;
+}
+
+.movieContainer .movieDetails {
+  position: relative;
+  margin: 10px auto;
+  font-size: 13px;
+}
+
+.movieContainer .actorList {
+  vertical-align: top;
+}
+.movieContainer .actors {
+  width: 130px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.movieContainer #star {
+  position: absolute;
+  margin: 0;
+  top: 0;
+  right: 0;
+}
+
+.movieContainer dt {
+  color: #828282;
+  margin: 0;
+}
+
+.movieContainer #stars::before {
+  content: url("../images/star.png");
+  margin-right: 4px;
+}
+
+.movieContainer .mvBtns {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #f2f2f2;
+  border-top: 1px solid #bdbdbd;
+  width: 100%;
+  height: 41px;
+}
+
+.mvBtns button {
+  border: none;
+  height: 100%;
+  width: 50%;
+}
+
+.mvBtns .book {
+  float: left;
+  border-right: 1px solid #bdbdbd;
+}
+
+.mvBtns .preview {
+  position: relative;
+  float: right;
+  padding-left: 20px;
+}
+
+.mvBtns .preview::before {
+  content: url("../images/btn_play.png");
+  position: absolute;
+  top: 12px;
+  left: 20px;
+  width: 15px;
+  height: 15px;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  height: 213px;
+  background-color: #f2f2f2;
+}
+
+footer article {
+  display: inline-block;
+  width: 1189px;
+  height: 90px;
+  margin: 0 auto;
+}
+
+footer article:first-child {
+  border-bottom: 1px solid #bdbdbd;
+}
+
+footer article .companyName {
+  float: left;
+  height: 100%;
+  line-height: 100px;
+}
+
+footer article .snsIcons {
+  float: right;
+  height: 100px;
+  list-style: none;
+}
+
+.icon {
+  float: left;
+  margin: 40px 0 40px 20px;
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  background-position: center center;
+}
+
+#twitter {
+  background-image: url("../images/twitter.png");
+}
+
+#instagram {
+  background-image: url("../images/instagram.png");
+}
+
+#facebook {
+  background-image: url("../images/facebook.png");
+}
+
+footer article dl > * {
+  display: inline-block;
+}
+
+footer article dl {
+  float: left;
+  font-size: 14px;
+  line-height: 100px;
+}
+
+footer article dl dt {
+  font-weight: 700;
+}
+
+footer article dl dd:not(:last-child)::after {
+  content: "|";
+  margin-left: 5px;
+}
+
+footer article span {
+  float: right;
+  line-height: 100px;
+}

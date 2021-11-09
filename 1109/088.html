@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        .box{
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+            animation: moveBox 10s linear alternate infinite;
+            /* transition: moveBox 3s; */
+        }
+
+        @keyframes moveBox {
+            from {
+                transform: translate(0,0);
+            }
+
+            30% {
+                transform: translate(100px,0);
+            }
+
+            60% {
+                transform: translate(100px,100px);
+            }
+
+            100% {
+                transform: translate(0,100px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
