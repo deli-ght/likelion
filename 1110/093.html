@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media</title>
+    <style>
+        body{
+                background-color : rgb(166, 236, 60);
+            }
+        
+            .container{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                box-sizing: border-box;
+                align-items: center;
+                border: 10px solid rgb(223, 253, 212);
+                height: 500px;
+                width: 100%;
+                background-color: rgb(141, 148, 130);
+            }
+
+            .item{
+                margin: 50px;
+                width: 800px;
+                background-color: rgb(255, 255, 255);
+
+            }
+        @media screen and (max-width : 1000px) {
+            body{
+                background-color : rosybrown;
+            }
+
+            .container{
+                height: 800px;
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width : 600px) {
+            body{
+                background-color : rgb(149, 169, 235);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi unde optio dicta iste sit laborum sint placeat ratione. Laboriosam cupiditate beatae accusamus non qui nulla labore culpa incidunt tenetur reiciendis.
+        Necessitatibus eaque earum amet debitis ex, facilis aut autem, nemo ducimus nam quisquam tempora deserunt nulla eveniet omnis labore temporibus odio optio nobis illo deleniti! Non numquam laborum soluta laboriosam.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo dolorem quod esse aspernatur omnis, dolore, alias illo nobis veniam corrupti ex praesentium eveniet, officia est ipsam quisquam fugit ullam. Quia.
+        A, excepturi. Explicabo molestias cupiditate vero dolorem perspiciatis, iusto modi tempore consequuntur quisquam ullam necessitatibus suscipit obcaecati similique maxime aperiam totam ad harum voluptatem deleniti incidunt possimus quia quae alias!</div>
+    </div>
+    <h1>hello world</h1>
+</body>
+</html>
