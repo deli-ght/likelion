@@ -256,4 +256,11 @@ footer .copyright {
     left: 630px;
     top: 100px;
   }
+
+  .result {
+    font-size: 42px;
+  }
+  .resultStrong {
+    font-size: 72px;
+  }
 }
