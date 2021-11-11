@@ -141,6 +141,10 @@ header #title {
   margin: 0 13px 50px 13px;
 }
 
+.btnShare {
+  background-color: white;
+}
+
 .result {
   margin: 30px auto 50px auto;
 }

@@ -3,13 +3,17 @@
 const CountBtn = document.querySelector(".btnCount");
 
 CountBtn.addEventListener("click", ()=>{
-    const hour = document.querySelector(".hourInput");
-    const job = document.querySelector(".jobInput");
+    const hour = document.querySelector(".hourInput").value;
+    const job = document.querySelector(".jobInput").value;
 
-    const resultJob = document.querySelector(".resultJob");
-    const result = document.querySelector(".resultHour");
-    let hours = parseInt(hour.value)
-    let studyHr = Math.ceil(10000 / hours)
-    resultJob.textContent = job.value;
-    result.textContent = studyHr;
+    if (hour && job){
+        const resultJob = document.querySelector(".resultJob");
+        const result = document.querySelector(".resultHour");
+        let hours = parseInt(hour)
+        let studyHr = Math.ceil(10000 / hours)
+        resultJob.textContent = job;
+        result.textContent = studyHr;
+    }else{
+        alert("빈칸을 채워주세요!😥")
+    }
 })
