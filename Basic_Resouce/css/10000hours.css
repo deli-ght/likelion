@@ -49,6 +49,10 @@ body {
   text-align: center;
 }
 
+.lineWrap {
+  display: block;
+}
+
 header {
   display: flex;
   justify-content: center;
