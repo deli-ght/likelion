@@ -9,7 +9,7 @@ CountBtn.addEventListener("click", ()=>{
     if (hour && job){
         const resultJob = document.querySelector(".resultJob");
         const result = document.querySelector(".resultHour");
-        let hours = parseInt(hour)
+        let hours = parseFloat(hour)
         let studyHr = Math.ceil(10000 / hours)
         resultJob.textContent = job;
         result.textContent = studyHr;
