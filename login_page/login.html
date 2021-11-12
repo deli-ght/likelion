@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <main id="main">
+   <img src="images/weniv-logo.png" alt="weniv_logo">
+        <h5>위니브를 더 즐겁고 편리하게 이용하세요</h5>
+        <button class="btn main_btn-login">로그인</button>
+    </main>
+    <section id="login">
+        <h3 class="login_title">로그인 또는 회원가입</h3>
+        <button class="close">
+            <img class="login_close" src="images/close.png" alt="close">
+        </button>
+            <section id="login_execute">
+            <form action="" class="login_contents">
+                <h5 class="login_quote">위니브에서 여러분의 궁금증을 해결하세요! :)</h5>
+                    <input id="id" class="login_input" type="text" placeholder="아이디">
+                    <input id="pw" class="login_input" type="password" placeholder="비밀번호">
+                    <label class="login_radio-keep-id" for="login_checkbox">
+                        <span class="login_check"></span>
+                        <input id="login_checkbox" type="checkbox"> 로그인 상태 유지
+                    </label>
+                    <button class="btn login_btn-login">로그인</button>
+                <article class="login_info">
+                    <a href="#">회원가입</a>
+                    <a href="#">아이디/비밀번호 찾기</a>
+                </article>
+            </form>
+            <fieldset class="sns_login">
+                <legend class="sns_login-legend">또는</legend>
+                <button class="sns_login_btn" id="google">구글 계정으로 로그인</button>
+                <button class="sns_login_btn" id="facebook">페이스북 계정으로 로그인</button>
+                <button class="sns_login_btn" id="naver">네이버 계정으로 로그인</button>
+                <button class="sns_login_btn" id="kakaotalk">카카오톡 계정으로 로그인</button>
+            </fieldset>
+        </section>
+    </section>
+    <script src="js/login.js"></script>
+</body>
+</html>
