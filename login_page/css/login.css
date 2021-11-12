@@ -1,3 +1,5 @@
+/* base */
+
 @font-face {
   font-family: "SpoqaHanSansNeo";
   src: url("../src/SpoqaHanSansNeo-Regular.ttf");
@@ -7,7 +9,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "SpoqaHanSansNeo";
 }
 
 body {
@@ -16,19 +17,27 @@ body {
   align-items: center;
   text-align: center;
   background-color: #f2f2f2;
+  font-family: "SpoqaHanSansNeo";
 }
 
+/* module */
+
 .btn {
-  height: 60px;
-  font-size: 22px;
-  font-weight: 700;
-  color: #fff;
+  width: 100%;
+  height: 50px;
   border: none;
   border-radius: 5px;
-  background-color: #2f80ed;
+  font-family: inherit;
+  font-weight: 600;
   cursor: pointer;
 }
 
+.btn-login {
+  background-color: #2f80ed;
+  color: #fff;
+}
+
+/* main */
 #main {
   margin: 360px;
   padding: 30px;
@@ -46,9 +55,11 @@ body {
 }
 
 #main .main_btn-login {
-  width: 440px;
+  height: 60px;
+  font-size: 22px;
 }
 
+/* login modal 창 */
 #login {
   display: none;
   position: absolute;
@@ -57,6 +68,7 @@ body {
   background-color: #fff;
   border-radius: 5px;
   border: 1px solid #c4c4c4;
+  color: #767676;
 }
 
 #login .login_title {
@@ -64,6 +76,7 @@ body {
   border-bottom: 1px solid #c4c4c4;
   font-size: 16px;
   font-weight: 500;
+  color: #000;
 }
 
 #login .close {
@@ -84,6 +97,7 @@ body {
   margin-bottom: 24px;
   font-weight: 500;
   font-size: 20px;
+  color: black;
 }
 
 #login #login_execute {
@@ -93,44 +107,66 @@ body {
   padding-left: 16px;
   border: 1px solid #c4c4c4;
   border-radius: 5px;
-  color: #767676;
   width: 100%;
   height: 50px;
   margin-bottom: 10px;
+  font-family: inherit;
 }
 #login .login_input::placeholder {
   font-size: 16px;
 }
 
-#login .login_radio-keep-id {
-  color: #767676;
+#login .login_input:focus {
+  font-size: 16px;
   font-weight: 500;
 }
 
-#login .login_check {
-  display: inline-block;
-  vertical-align: bottom;
-  margin: 5px 5px 0 0;
-  width: 20px;
-  height: 20px;
-  background-image: url("../images/unchecked.png");
-  background-size: contain;
+#login .login_radio-keep-id {
+  position: relative;
+  font-weight: 500;
 }
 
 #login #login_checkbox {
   display: none;
 }
 
-#login .is-clicked {
-  background-image: url("../images/checked.png");
+#login .login_radio-keep-id::before {
+  display: inline-block;
+  content: "";
+  vertical-align: bottom;
+  margin: 5px 5px 0 0;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #767676;
+  border-radius: 50%;
+}
+
+#login .login_radio-keep-id::after {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 8px;
+  width: 5.5px;
+  height: 8.5px;
+  border-bottom: 1px solid #767676;
+  border-right: 1px solid #767676;
+  transform: rotate(45deg);
+}
+
+#login #login_checkbox:checked + .login_radio-keep-id::before {
+  border: 1px solid #2f80ed;
+  background-color: #2f80ed;
+}
+
+#login #login_checkbox:checked + .login_radio-keep-id::after {
+  border-color: #fff;
 }
 
 #login .login_btn-login {
-  width: 100%;
   height: 50px;
   font-size: 18px;
   margin: 20px 0;
-  letter-spacing: 2px;
 }
 
 #login .login_info {
@@ -142,7 +178,7 @@ body {
 
 #login .login_info a {
   text-decoration: none;
-  color: black;
+  color: inherit;
 }
 
 #login .login_info a:not(:last-child)::after {
@@ -152,8 +188,11 @@ body {
   font-size: 14px;
 }
 
+/* sns_login */
+
 .sns_login {
   margin-top: 30px;
+  border-top: 1px solid #c4c4c4;
   border-left: none;
   border-right: none;
   border-bottom: none;
@@ -163,22 +202,18 @@ body {
   margin-bottom: 20px;
   padding: 0 13px;
   font-size: 14px;
-  color: #767676;
 }
 
 .sns_login .sns_login_btn {
+  padding-left: 25px;
   position: relative;
-  width: 100%;
-  height: 50px;
   background-color: #fff;
   border-radius: 5px;
-  box-shadow: none;
-  cursor: pointer;
   font-size: 16px;
+  font-weight: 500;
+  color: inherit;
 }
-.sns_login .sns_login_btn {
-  padding-left: 25px;
-}
+
 .sns_login .sns_login_btn:not(:last-child) {
   margin-bottom: 10px;
 }

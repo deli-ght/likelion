@@ -13,9 +13,3 @@ main_login.addEventListener("click", () => {
 closeBtn.addEventListener("click", ()=> {
     modal.style.display = "none";
 })
-
-login_chx_label.addEventListener('click',() => {
-    if (login_chx.checked){
-        login_show_chx.classList.toggle("is-clicked");
-    }
-})
