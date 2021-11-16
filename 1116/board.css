@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.section_board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  transform-style: preserve-3d;
+  transform: rotate3d(1, -0.3, 0.3, 60deg);
+}
+
+.board_item {
+  width: 100px;
+  height: 100px;
+  transform-style: preserve-3d;
+  box-shadow: 10px 10px 1px 0 rgb(189, 188, 188);
+  translate: all 1s;
+}
+
+.board_item:nth-child(3n) {
+  background-color: cornflowerblue;
+}
+
+.board_item:nth-child(3n-1) {
+  background-color: rgb(97, 138, 70);
+}
+
+.board_item:nth-child(3n-2) {
+  background-color: rgb(80, 70, 138);
+}
+
+.board_item:hover {
+  transform: translate(-10px, -10px);
+  box-shadow: 20px 20px 5px 0 rgb(189, 188, 188);
+}
