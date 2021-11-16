@@ -20,6 +20,19 @@ body {
   font-family: "SpoqaHanSansNeo";
 }
 
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
 /* module */
 
 .btn {
@@ -39,7 +52,7 @@ body {
 
 /* main */
 #main {
-  margin: 360px;
+  margin: 360px auto;
   padding: 30px;
   background-color: #fff;
   border: 1px solid #c4c4c4;
@@ -48,7 +61,8 @@ body {
   height: 240px;
 }
 
-#main h5 {
+#main strong {
+  display: block;
   margin: 22px auto 30px auto;
   font-size: 16px;
   font-weight: 400;
@@ -82,11 +96,10 @@ body {
 #login .close {
   border: none;
   background: transparent;
-}
-#login .login_close {
   position: absolute;
   top: 23px;
   right: 24px;
+  cursor: pointer;
 }
 
 #login .login_contents {
@@ -94,9 +107,10 @@ body {
 }
 
 #login .login_quote {
+  display: block;
   margin-bottom: 24px;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 16px;
   color: black;
 }
 
@@ -170,9 +184,6 @@ body {
 }
 
 #login .login_info {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 14px;
 }
 
