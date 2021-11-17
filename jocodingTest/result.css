@@ -1,0 +1,75 @@
+@font-face {
+  font-family: "RixYeoljeongdo_Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/RixYeoljeongdo_Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+
+* {
+  font-family: "GmarketSansMedium", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  background-color: #0d6efd;
+  height: 10vh;
+  min-height: 50px;
+  color: white;
+}
+
+header h1 {
+  padding-top: 3px;
+  font-family: "RixYeoljeongdo_Regular", sans-serif;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
+.result {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid #eeeeee;
+}
+
+.result img {
+  width: 80%;
+  max-width: 500px;
+}
+
+.result h2 {
+  font-family: "RixYeoljeongdo_Regular", sans-serif;
+  margin: 30px;
+}
+
+.result p {
+  padding: 0 30px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e8eef4;
+  height: 30vh;
+  color: #7c8081;
+}
+
+.ad {
+  display: inline-block;
+  width: 70%;
+}
