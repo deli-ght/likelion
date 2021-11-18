@@ -1,0 +1,127 @@
+@font-face {
+  font-family: "SBAggroB";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  background-color: rgb(191, 191, 197);
+}
+main {
+  display: inline-block;
+  background-color: black;
+  width: 90%;
+  height: 600px;
+  border-radius: 30px;
+}
+
+.title {
+  font-size: 20px;
+}
+
+#tv_screen {
+  display: flex;
+  width: 90%;
+  height: 300px;
+  margin: 20px auto;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border-radius: 30px;
+}
+
+#tv_screen h2 {
+  margin: 20px;
+  font-size: 32px;
+  background-color: rgb(238, 255, 5);
+}
+
+#tv_btns p {
+  margin-bottom: 20px;
+}
+.recommand {
+  background-color: rgb(229, 219, 240);
+}
+#tv_screen h3 {
+  margin: 10px;
+}
+
+#tv_btns {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: rgb(238, 255, 5);
+}
+#tv_btns #test_index {
+  margin: 0;
+  font-size: 20px;
+  height: 150px;
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    position: relative;
+    top: 20px;
+    transform: rotate(-5deg);
+  }
+  .title {
+    font-size: 36px;
+    text-shadow: 3px 3px rgb(164, 102, 236);
+  }
+
+  .tv {
+    display: flex;
+    height: 80%;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #tv_screen {
+    margin: 0;
+    width: 60%;
+    height: 400px;
+  }
+  #tv_screen h2 {
+    font-size: 48px;
+  }
+
+  #tv_screen h3 {
+    margin: 20px;
+    font-size: 30px;
+  }
+
+  #tv_btns {
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    transform: rotate(0deg);
+  }
+  .title {
+    font-size: 52px;
+  }
+
+  #tv_screen {
+    font-size: 22px;
+  }
+  #tv_screen h2 {
+    font-size: 52px;
+  }
+
+  #tv_screen h3 {
+    font-size: 36px;
+  }
+}
