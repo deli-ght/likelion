@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ColaCola</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="resource/style/style.css">
+</head>
+<body>
+    <header>
+        <img src="resource/img/logo.svg" alt="colacola">
+    </header>
+    <main>
+        <section class="order_box">
+            <ul class="items">
+                <li class="item">
+                    <button type="button" class="item_btn">
+                        <img src="resource/img/Original_Cola.svg" alt="Original_Cola">
+                        <p class="item_name">Original_Cola</p>
+                        <p class="item_price">1000원</p>
+                    </button>
+                </li> 
+                <li class="item">
+                    <button type="button"  class="item_btn">
+                        <img src="resource/img/Original_Cola.svg" alt="Original_Cola">
+                        <p class="item_name">Original_Cola</p>
+                        <p class="item_price">1000원</p>
+                    </button>
+                </li>
+                <li class="item">
+                    <button type="button"  class="item_btn">
+                        <img src="resource/img/Original_Cola.svg" alt="Original_Cola">
+                        <p class="item_name">Original_Cola</p>
+                        <p class="item_price">1000원</p>
+                    </button>
+                </li>
+                <li class="item">
+                    <button type="button"  class="item_btn">
+                        <img src="resource/img/Original_Cola.svg" alt="Original_Cola">
+                        <p class="item_name">Original_Cola</p>
+                        <p class="item_price">1000원</p>
+                    </button>
+                </li>
+                <li class="item">
+                    <button type="button"  class="item_btn">
+                        <img src="resource/img/Original_Cola.svg" alt="Original_Cola">
+                        <p class="item_name">Original_Cola</p>
+                        <p class="item_price">1000원</p>
+                    </button>
+                </li>
+                <li class="item">
+                    <button type="button"  class="item_btn">
+                        <img src="resource/img/Original_Cola.svg" alt="Original_Cola">
+                        <p class="item_name">Original_Cola</p>
+                        <p class="item_price">1000원</p>
+                    </button>
+                </li>
+            </ul>
+            <form action="">
+                <div class="money charge_money">
+                    <span>잔액 : </span>
+                    <span>1000원</span>
+                </div>
+                <button type="button" class="m_btn">거스름돈 반환</button>
+                <label class="sr-only" for="deposit">입금액 입력</label>
+                <input type="number" id="deposit" placeholder="입금액 입력">
+                <button type="button" class="m_btn">입금</button>
+                <article class="receipt">
+                    <ul class="order_checks">
+                        <li class="order_check checked_item">
+                            <img src="resource/img/Original_Cola.svg" alt="Original_Cola">
+                            <span class="checked_name">Original_Cola</span>
+                            <span class="checked_num">1</span>
+                        </li>
+                        <li class="order_check checked_item">
+                            <img src="resource/img/Original_Cola.svg" alt="Original_Cola">
+                            <span class="checked_name">Original_Cola</span>
+                            <span class="checked_num">1</span>
+                        </li><li class="order_check checked_item">
+                            <img src="resource/img/Original_Cola.svg" alt="Original_Cola">
+                            <span class="checked_name">Original_Cola</span>
+                            <span class="checked_num">1</span>
+                        </li><li class="order_check checked_item">
+                            <img src="resource/img/Original_Cola.svg" alt="Original_Cola">
+                            <span class="checked_name">Original_Cola</span>
+                            <span class="checked_num">1</span>
+                        </li><li class="order_check checked_item">
+                            <img src="resource/img/Original_Cola.svg" alt="Original_Cola">
+                            <span class="checked_name">Original_Cola</span>
+                            <span class="checked_num">1</span>
+                        </li>
+                    </ul>
+                </article>
+                <button type="button" class="get_items">획득</button>
+            </form>
+        </section>
+        <section class="selection_box">
+             <article id="own_money_box">
+                 <div class="money own_money">
+                     <span>소지금 : </span>
+                     <span>25,000원</span>
+                 </div>
+             </article>
+             <article class="got_items_box">
+                <h2>획득한 음료</h2>
+                <article class="receipt got_receipt">
+                    <ul class="order_checks">
+                        <li class="order_check checked_item">
+                            <img src="resource/img/Original_Cola.svg" alt="Original_Cola">
+                            <span class="checked_name">Original_Cola</span>
+                            <span class="checked_num">1</span>
+                        </li>
+                        <li class="order_check checked_item">
+                            <img src="resource/img/Original_Cola.svg" alt="Original_Cola">
+                            <span class="checked_name">Original_Cola</span>
+                            <span class="checked_num">1</span>
+                        </li><li class="order_check checked_item">
+                            <img src="resource/img/Original_Cola.svg" alt="Original_Cola">
+                            <span class="checked_name">Original_Cola</span>
+                            <span class="checked_num">1</span>
+                        </li><li class="order_check checked_item">
+                            <img src="resource/img/Original_Cola.svg" alt="Original_Cola">
+                            <span class="checked_name">Original_Cola</span>
+                            <span class="checked_num">1</span>
+                        </li><li class="order_check checked_item">
+                            <img src="resource/img/Original_Cola.svg" alt="Original_Cola">
+                            <span class="checked_name">Original_Cola</span>
+                            <span class="checked_num">1</span>
+                        </li>
+                </article>
+                <strong class="total price">총금액 : 9,000원</strong>
+             </article>
+        </section>
+    </main>
+</body>
+</html>

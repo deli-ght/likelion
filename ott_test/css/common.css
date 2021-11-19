@@ -54,3 +54,16 @@ button {
   position: absolute;
   top: 0;
 }
+
+#tv_btns::after {
+  content: "made by minju";
+  display: block;
+  color: white;
+}
+
+@media screen and (max-width: 426px) {
+  #tv_btns::after {
+    position: absolute;
+    bottom: 0;
+  }
+}
