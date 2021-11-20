@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="IE=edge"
+    >
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <link rel="stylesheet" href="style.css">
+    <title>ff</title>
+</head>
+
+<body>
+    <article class="selection">
+        <button class="title">최애 프로그래밍 언어</button>
+        <ul class="menus">
+            <li class="menu"><button class="menu_btn">Python</button></li>
+            <li class="menu"><button class="menu_btn">Java</button></li>
+            <li class="menu"><button class="menu_btn">JavaScript</button></li>
+            <li class="menu"><button class="menu_btn">C#</button></li>
+            <li class="menu"><button class="menu_btn">C/C++</button></li>
+        </ul>
+        
+            </article>
+
+        <select name="d" id="">오늘의 메뉴</select>
+        <datalist id="d">
+            
+        </datalist>
+        <script>
+            const title = document.querySelector(".title");
+            const menus = document.querySelector(".menus");
+            
+            title.addEventListener('click', () => {
+                // toggle로 설정해 클릭 시 사라졌다가 나타났다가 반복 가능
+                menus.classList.toggle("is_show");
+                title.classList.toggle("is_btn_open")
+                
+            })
+            
+        const menu = document.querySelectorAll(".menu");
+        menu.forEach(el => {
+            el.addEventListener('click' , e => {
+                title.textContent = e.target.textContent;
+                menus.classList.remove('is_show');
+                title.classList.remove("is_btn_open")
+            })
+        })
+    </script>
+</body>
+
+</html>
