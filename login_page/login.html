@@ -15,15 +15,19 @@
         <button class="btn btn-login main_btn-login">로그인</button>
     </main>
     <section id="login">
+        <section class="login_form">
         <h3 class="login_title">로그인 또는 회원가입</h3>
             <section id="login_execute">
                 <form action="" class="login_contents">
                     <strong class="login_quote">위니브에서 여러분의 궁금증을 해결하세요! :)</strong>
                         <label for="id" class="sr-only">아이디</label>
-                        <input id="id" class="login_input" type="text" placeholder="아이디" required>
+                        <input id="id" class="login_input" type="text" placeholder="아이디">
+                        <strong class="error" id="error_id">아이디를 입력해주세요.</strong>
                         <label for=pw" class="sr-only">비밀번호</label>
-                        <input id="pw" class="login_input" type="password" placeholder="비밀번호" required>
-                        <input id="login_checkbox" type="checkbox"> 
+                        <input id="pw" class="login_input" type="password" placeholder="비밀번호">
+                        <strong class="error" id="error_pw">비밀번호를 입력해주세요.</strong>
+                        <strong class="error" id="error_wr">아이디 또는 비밀번호가 일치하지 않습니다.</strong>
+                        <input class="sr-only" id="login_checkbox" type="checkbox"> 
                         <label class="login_radio-keep-id" for="login_checkbox">로그인 상태 유지</label>
                         <button class="btn btn-login login_btn-login">로그인</button>
                 </form>
@@ -42,6 +46,7 @@
         <button class="close">
             <img class="login_close" src="images/close.png" alt="close">
         </button>
+        </section>
     </section>
     <span id="minju">minju</span>
     <script src="js/login.js"></script>
