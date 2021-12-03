@@ -13,5 +13,25 @@
     font-size: 30px;
     font-weight: 700;
     color: white;
-    background-color: blueviolet
+    background-color: black;
+}
+
+.red{
+    background-color: red;
+}
+
+.yellow{
+    background-color: rgb(136, 112, 46);
+}
+
+.green{
+    background-color: green;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.purple{
+    background-color: purple;
 }

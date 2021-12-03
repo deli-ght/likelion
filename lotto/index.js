@@ -22,16 +22,26 @@ function getLotto(){
     }
     
     makeLotto.innerHTML = "";
-    makeBall(arr);
+    makeBall([...arr]);
 }
 
 function makeBall(arr){
-    arr.forEach(el => {
+    arr.sort((a,b)=> a-b).forEach(el => {
         const li = document.createElement("div");
         li.classList.add("ball");
+        let bgClr = getColor(parseInt(el));
+        li.classList.add(`${bgClr}`);
         li.textContent = el;
         makeLotto.appendChild(li);
     })
+}
+
+function getColor(num){
+    let color = num >= 40 ? "red" : 
+        num >= 30 ? "yellow":
+        num >= 20 ? "green" :
+        num >= 10 ? "blue" : "purple"
+    return color;
 }
 
 lottoBtn.addEventListener("click", getLotto);
