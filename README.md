@@ -20,3 +20,5 @@
 |[나에게 맞는 OTT 서비스는?](https://deli-ght.github.io/likelion/ott_test/index.html)| HTML / CSS / JS | 🎨💻| 
 |[자판기 ui 만들기](https://deli-ght.github.io/likelion/vendingmachine/index)|HTML / CSS | 💻|
 |[이력서 템플릿](https://deli-ght.github.io/likelion/Resume/resume)|HTML / Tailwind| 🎨💻|
+|[정글 시네마 UI](https://deli-ght.github.io/likelion/hw1/index_cinema)|HTML / CSS | 💻|
+
